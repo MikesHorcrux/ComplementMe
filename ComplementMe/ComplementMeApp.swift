@@ -11,7 +11,7 @@ import SwiftUI
 struct ComplementMeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ComplimentView()
         }
     }
 }
