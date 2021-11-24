@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A111FDC1274DD7560072151F /* MainButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A111FDC0274DD7560072151F /* MainButtonStyle.swift */; };
 		A1617EA2274D9E280074DC8D /* ComplementMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1617EA1274D9E280074DC8D /* ComplementMeApp.swift */; };
 		A1617EA6274D9E280074DC8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1617EA5274D9E280074DC8D /* Assets.xcassets */; };
 		A1617EA9274D9E280074DC8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1617EA8274D9E280074DC8D /* Preview Assets.xcassets */; };
 		A1617EB0274D9E450074DC8D /* Compements.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1617EAF274D9E450074DC8D /* Compements.swift */; };
 		A1617EB2274DC0DB0074DC8D /* ComplementsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1617EB1274DC0DB0074DC8D /* ComplementsViewModel.swift */; };
 		A1617EB4274DC2020074DC8D /* ComplimentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1617EB3274DC2020074DC8D /* ComplimentView.swift */; };
+		A1617EB6274DD2ED0074DC8D /* ComplimentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1617EB5274DD2ED0074DC8D /* ComplimentsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A111FDC0274DD7560072151F /* MainButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonStyle.swift; sourceTree = "<group>"; };
 		A1617E9E274D9E280074DC8D /* ComplementMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComplementMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1617EA1274D9E280074DC8D /* ComplementMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplementMeApp.swift; sourceTree = "<group>"; };
 		A1617EA5274D9E280074DC8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -23,6 +26,7 @@
 		A1617EAF274D9E450074DC8D /* Compements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compements.swift; sourceTree = "<group>"; };
 		A1617EB1274DC0DB0074DC8D /* ComplementsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplementsViewModel.swift; sourceTree = "<group>"; };
 		A1617EB3274DC2020074DC8D /* ComplimentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplimentView.swift; sourceTree = "<group>"; };
+		A1617EB5274DD2ED0074DC8D /* ComplimentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplimentsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				A1617EAF274D9E450074DC8D /* Compements.swift */,
 				A1617EB1274DC0DB0074DC8D /* ComplementsViewModel.swift */,
 				A1617EB3274DC2020074DC8D /* ComplimentView.swift */,
+				A1617EB5274DD2ED0074DC8D /* ComplimentsListView.swift */,
+				A1617EB7274DD6DE0074DC8D /* Styles */,
 				A1617EA5274D9E280074DC8D /* Assets.xcassets */,
 				A1617EA7274D9E280074DC8D /* Preview Content */,
 			);
@@ -71,6 +77,14 @@
 				A1617EA8274D9E280074DC8D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A1617EB7274DD6DE0074DC8D /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				A111FDC0274DD7560072151F /* MainButtonStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1617EB2274DC0DB0074DC8D /* ComplementsViewModel.swift in Sources */,
+				A1617EB6274DD2ED0074DC8D /* ComplimentsListView.swift in Sources */,
+				A111FDC1274DD7560072151F /* MainButtonStyle.swift in Sources */,
 				A1617EA2274D9E280074DC8D /* ComplementMeApp.swift in Sources */,
 				A1617EB4274DC2020074DC8D /* ComplimentView.swift in Sources */,
 				A1617EB0274D9E450074DC8D /* Compements.swift in Sources */,

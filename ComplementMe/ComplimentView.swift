@@ -13,21 +13,33 @@ struct ComplimentView: View {
 
     var body: some View {
         VStack {
-            Button {
-                showSheet.toggle()
-            } label: {
-                Text("test")
+            HStack {
+                Button { showSheet.toggle() } label: {
+                    Image(systemName: "list.dash")
+                }
+            .buttonStyle(MainButtonStyle())
+                Spacer()
             }
+            Spacer()
 
             Text(complimentVM.complements.complement)
+                .fontWeight(.bold)
+                .font(.title)
+                .padding()
+                .overlay(
+                        RoundedRectangle(cornerRadius: 16)
+                            .stroke(complimentVM.complements.complement != "" ? .purple : .clear, lineWidth: 4)
+                    )
+            Spacer()
             Button("Compliment Me!") {
                 complimentVM.grabARandomCompliment()
             }
+            .buttonStyle(MainButtonStyle())
         }
+        .padding()
+        .padding(.vertical, 20)
         .sheet(isPresented: $showSheet) {
-            List(complimentVM.complements.complementsList, id: \.self){ compliment in
-                Text(compliment)
-            }
+            ComplimentsListView(complimentVM: complimentVM, showSheet: $showSheet)
         }
     }
 }
